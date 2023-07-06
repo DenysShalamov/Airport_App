@@ -1,0 +1,9 @@
+@import './vars.scss';
+@import './global.scss';
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: $body-bgc;
+  color: $text-color-primary;
+}

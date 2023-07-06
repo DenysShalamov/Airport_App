@@ -30,7 +30,7 @@ Attention! After the start of the full-scale war, flights in Ukraine have been s
 
 ## Installation
 You can run this project locally just do:  
-clone branch  ```master``` with ```git clone https://github.com/iniacor/Airport.git``` or fork it and then clone it from your forked repo
+clone branch  ```master``` with ```https://github.com/DenysShalamov/Airport_App.git``` or fork it and then clone it from your forked repo
 Move to the folder, install all dependencies and run the server:
 
 ```sh

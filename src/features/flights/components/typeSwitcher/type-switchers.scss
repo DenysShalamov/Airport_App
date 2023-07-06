@@ -1,0 +1,77 @@
+@import '../../../../styles/vars.scss';
+@import '../../../../styles/breakpoints.scss';
+
+.type-switchers {
+  display: flex;
+  margin: auto 0;
+  color: $bg-color-white;
+
+  &__link {
+    flex: 1;
+    border-radius: 25px 25px 0 0;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    background-color: $bg-color-blue;
+    color: $text-color-white;
+    overflow: hidden;
+    @include for-large-up {
+      border-radius: 60px 60px 0 0;
+      font-size: 24px;
+      line-height: 60px;
+    }
+
+    &:hover {
+      background-color: $bg-darkblue-color;
+    }
+    &:focus {
+      border: 1px solid transparent;
+    }
+
+    &:active {
+      box-shadow: 1px 20px 36px -7px rgb(0 0 0 / 34%);
+    }
+
+    &_arrivals {
+      margin-left: -50px;
+      border-radius: 25px 25px 0 0;
+      @include for-large-up {
+        margin-left: -100px;
+        border-radius: 60px 60px 0 0;
+      }
+    }
+  }
+
+  &__link-icon {
+    width: 40px;
+    height: 30px;
+    transform: translate(1px, 10px);
+    @include for-large-up {
+      width: 60px;
+      height: 48px;
+      transform: translate(-15px, 13px);
+    }
+  }
+
+  &__link-text_dep {
+    padding-right: 35px;
+  }
+}
+
+.active {
+  z-index: 1;
+  background-color: $bg-color-white;
+  color: $text-darkblue-color;
+  border-radius: 25px 25px 0 0;
+  box-shadow: 1px 20px 36px -7px rgb(0 0 0 / 34%);
+  @include for-large-up {
+    border-radius: 60px 60px 0 0;
+  }
+
+  &:hover {
+    background-color: $bg-color-white;
+  }
+}
